@@ -371,7 +371,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kcspl.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "POC Adhoc provisional profile";
+				PROVISIONING_PROFILE_SPECIFIER = "CICDDemo-appstore";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,7 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kcspl.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "POC Adhoc provisional profile";
+				PROVISIONING_PROFILE_SPECIFIER = "CICDDemo-appstore";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
