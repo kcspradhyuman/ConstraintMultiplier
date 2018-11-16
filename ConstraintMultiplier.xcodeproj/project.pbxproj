@@ -12,6 +12,7 @@
 		28C5673F219C47710015E3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C5673D219C47710015E3C4 /* Main.storyboard */; };
 		28C56741219C47820015E3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C56740219C47820015E3C4 /* Assets.xcassets */; };
 		28C56744219C47820015E3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C56742219C47820015E3C4 /* LaunchScreen.storyboard */; };
+		3BBC866C1642254E3387776B /* Pods_ConstraintMultiplier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B790202FFA2A1E6E59CB180 /* Pods_ConstraintMultiplier.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		28C56740219C47820015E3C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C56743219C47820015E3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C56745219C47820015E3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B790202FFA2A1E6E59CB180 /* Pods_ConstraintMultiplier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstraintMultiplier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD35F3D31C99E4A9171281D0 /* Pods-ConstraintMultiplier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintMultiplier.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintMultiplier/Pods-ConstraintMultiplier.release.xcconfig"; sourceTree = "<group>"; };
+		DB1AD7E09EB17411CC47E3B8 /* Pods-ConstraintMultiplier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintMultiplier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintMultiplier/Pods-ConstraintMultiplier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBC866C1642254E3387776B /* Pods_ConstraintMultiplier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				28C56738219C47710015E3C4 /* ConstraintMultiplier */,
 				28C56737219C47710015E3C4 /* Products */,
+				6FB62CC1CFD0EECADC5ECB6D /* Pods */,
+				CDE4BCDA1A5D879552621DE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ConstraintMultiplier;
 			sourceTree = "<group>";
 		};
+		6FB62CC1CFD0EECADC5ECB6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB1AD7E09EB17411CC47E3B8 /* Pods-ConstraintMultiplier.debug.xcconfig */,
+				AD35F3D31C99E4A9171281D0 /* Pods-ConstraintMultiplier.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDE4BCDA1A5D879552621DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B790202FFA2A1E6E59CB180 /* Pods_ConstraintMultiplier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C56748219C47820015E3C4 /* Build configuration list for PBXNativeTarget "ConstraintMultiplier" */;
 			buildPhases = (
+				CB9B2F8AC32A7DDA9A3B495C /* [CP] Check Pods Manifest.lock */,
 				28C56732219C47710015E3C4 /* Sources */,
 				28C56733219C47710015E3C4 /* Frameworks */,
 				28C56734219C47710015E3C4 /* Resources */,
+				373AC4C6D9810E6F0489C3FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		373AC4C6D9810E6F0489C3FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ConstraintMultiplier/Pods-ConstraintMultiplier-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConstraintMultiplier/Pods-ConstraintMultiplier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9B2F8AC32A7DDA9A3B495C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConstraintMultiplier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28C56732219C47710015E3C4 /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		28C56749219C47820015E3C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1AD7E09EB17411CC47E3B8 /* Pods-ConstraintMultiplier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -305,6 +379,7 @@
 		};
 		28C5674A219C47820015E3C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD35F3D31C99E4A9171281D0 /* Pods-ConstraintMultiplier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
