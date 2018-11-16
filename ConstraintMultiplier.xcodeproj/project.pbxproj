@@ -360,8 +360,8 @@
 			baseConfigurationReference = DB1AD7E09EB17411CC47E3B8 /* Pods-ConstraintMultiplier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GWX9XCPYYK;
 				INFOPLIST_FILE = ConstraintMultiplier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -371,7 +371,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kcspl.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "POC Adhoc provisional profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,8 +382,8 @@
 			baseConfigurationReference = AD35F3D31C99E4A9171281D0 /* Pods-ConstraintMultiplier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GWX9XCPYYK;
 				INFOPLIST_FILE = ConstraintMultiplier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -393,7 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kcspl.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "POC Adhoc provisional profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
